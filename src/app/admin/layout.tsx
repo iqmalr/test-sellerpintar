@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { LogoutButton } from "@/components/logout-button";
 import { useAuth } from "@/hooks/useAuth";
-
+import logo from "@/images/logoipsum.png";
+import Image from "next/image";
 export default function AdminLayout({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
 
@@ -14,10 +15,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
       <div className="flex w-64 flex-col bg-blue-600 text-white">
         <div className="border-b border-blue-500 p-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white">
-              <div className="h-4 w-4 rounded-full bg-blue-600"></div>
+            <div className="relative h-[24px] w-[135px]">
+              <Image src={logo} alt="logo" fill />
             </div>
-            <span className="text-lg font-semibold">LogoIpsum</span>
           </div>
         </div>
 
