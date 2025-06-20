@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getAuthToken } from "./auth";
 
-const API_BASE_URL = "https://test-fe.mysellerpintar.com";
+const API_BASE_URL = "https://test-fe.mysellerpintar.com/api";
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,

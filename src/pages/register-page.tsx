@@ -60,7 +60,7 @@ function RegisterPage() {
   };
 
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-amber-300">
+    <div className="flex h-screen w-full items-center justify-center">
       <Card className="w-[400px]">
         <CardHeader className="flex items-center justify-center">
           <CardTitle>
